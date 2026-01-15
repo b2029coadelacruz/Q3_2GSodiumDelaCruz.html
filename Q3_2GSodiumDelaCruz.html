@@ -43,14 +43,14 @@
         border-radius: 4px;
     }
 
-
+    /* Focus pseudo-class */
     input:focus, select:focus, textarea:focus {
         border-color: #007bff;
         background-color: #eef5ff;
         outline: none;
     }
 
-
+    /* Style for invalid inputs on blur */
     .invalid {
         border: 2px solid red;
         background-color: #ffecec;
@@ -90,7 +90,7 @@
 
 <form method="post" action="submit" onsubmit="return confirmSubmit();" onreset="return confirmReset();">
 
-
+    <!-- FIELDSET 1: Information #1 to #4 -->
     <fieldset>
         <legend>Student Information</legend>
 
@@ -115,7 +115,7 @@
         </label>
     </fieldset>
 
-
+    <!-- FIELDSET 2: Information #5 to #8 -->
     <fieldset>
         <legend>Application Details</legend>
 
@@ -147,11 +147,11 @@
             Preferred Organization / Club:
             <select name="club" required>
                 <option value="">-- Select Club --</option>
-                <option value="Labuyo">Labuyo</option>
-                <option value="Palastro">Palastro</option>
-                <option value="Volant">Volant</option>
-                <option value="Flux">Flux</option>
-                <option value="Alianti">Alianti</option>
+                <option value="Labuyo">Football</option>
+                <option value="Palastro">Basketball</option>
+                <option value="Volant">Badminton</option>
+                <option value="Flux">Swimming</option>
+                <option value="Alianti">Ultimate Frisbee</option>
             </select>
         </label>
 
@@ -161,7 +161,7 @@
         </label>
     </fieldset>
 
-
+    <!-- Buttons -->
     <div class="buttons">
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
